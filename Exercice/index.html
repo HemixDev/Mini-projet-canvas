@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas height="800px" width="800px"></canvas>
+    <button>clear</button>
+    <script type="module" src="./main.js"></script>
+    <scrip src="random.js"></scrip>
+    <form id="shapeForm">
+        <label>
+            Mode:
+            <select name="mode" id="mode">
+                <option value="random">Random</option>
+                <option value="form">Create with form</option>
+            </select>
+        </label>
+        <div id="formFields">
+            <br>
+            <label>
+                Shape:
+                <select id="shapeType">
+                    <option value="Rectangle">Rectangle</option>
+                    <option value="Circle">Circle</option>
+                </select>
+            </label>
+            <br>
+            <label id="widthLabel">
+                Width:
+                <input type="number" id="width" min="1" value="50">
+            </label>
+            <br>
+            <label id="heightLabel">
+                Height:
+                <input type="number" id="height" min="1" value="50">
+            </label>
+            <br>
+            <label id="radiusLabel" style="display: none;">
+                Radius:
+                <input type="number" id="radius" min="1" value="50">
+            </label>
+            <br>
+            <label>
+                Color:
+                <input type="color" id="color" value="#000000">
+            </label>
+        </div>
+    </form>
+</body>
+</html>
